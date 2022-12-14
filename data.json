@@ -1,0 +1,45 @@
+{
+  "shoppingList": "Cart",
+  "items": [
+    {
+      "image": "images/waffle.jpg",
+      "name": "Waffle",
+      "price": 20,
+      "category": "Lacto-Vegetarian",
+      "amount": 0,
+      "subtotal": 0
+    },
+    {
+      "image": "images/buritto.jpg",
+      "name": "Buritto",
+      "price": 30,
+      "category": "Vegan",
+      "amount": 0,
+      "subtotal": 0
+    },
+    {
+      "image": "images/roll.jpg",
+      "name": "Roll",
+      "price": 40,
+      "category": "Lacto-Ovo Vegetarian",
+      "amount": 0,
+      "subtotal": 0
+    },
+    {
+      "image": "images/oatmilk.jpg",
+      "name": "Oat Milk",
+      "price": 10,
+      "category": "Vegan",
+      "amount": 0,
+      "subtotal": 0
+    },
+    {
+      "image": "images/bowl.jpg",
+      "name": "Rice Bowl",
+      "price": 50,
+      "category": "Vegan",
+      "amount": 0,
+      "subtotal": 0
+    }
+  ]
+}

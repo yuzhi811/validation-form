@@ -1,0 +1,20 @@
+:root {
+  --title-color: #4c105bb1;
+  --font-color: #2b1a71;
+  --bg-color: #faebd7;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+  background-color: var(--bg-color);
+}
+
+h2 {
+  color: var(--title-color);
+}
+ul,
+ol {
+  font-size: 18px;
+  color: var(--font-color);
+}

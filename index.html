@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="scripts/main.js" defer></script>
+    <title>Shopping List</title>
+  </head>
+  <body>
+    <h2>Form</h2>
+    <form name="form" method="POST" action="summary.html">
+      <fieldset>
+        <legend>📝Information</legend>
+        <!-- a) Text (min and max length) -->
+        <label for="name" class="title">✏️Name </label>
+        <input type="text" id="name" name="user_name" /><br />
+        <div class="indicate">§ Please enter between 1-20 letters</div>
+        <span class="alert" id="nameError"></span><br /><br />
+
+        <!-- b) Number (min and max of your choice) -->
+        <label for="age" class="title">✏️Age </label>
+        <input type="text" id="age" name="age" /><br />
+        <div class="indicate">§ Please enter between 0 - 100 number</div>
+
+        <span class="alert" id="numError"></span><br /><br />
+
+        <!-- c) Date ( verify input to be after specific date -->
+        <div>
+        
+            <label class="title" id="sdate">✏️Start Date </label>
+      
+          <input
+            class="start"
+            type="date"
+            name="sdate"
+            placeholder="dd/mm/yyyy"
+            for="sdate"
+          />
+        </div>
+        <br />
+            <label class="title" id="edate">✏️End Date </label>
+        
+          <input
+          class="end"
+          type="date"
+          name="edate"
+          placeholder="dd/mm/yyyy"
+          for="sdate"
+        />
+      </div>
+      <div class="indicate">§ The start date must not be earlier than the last day</div>
+
+      <span class="alert" id="dateError"></span><br /><br />
+
+          <!-- d) A List that allows editing input and single selection (Required) -->
+          <label class="title">✏️Time </label>
+          <span class="req">*Required</span>
+          <br />
+          <input list="time" name="time" />
+          <datalist id="time">
+            <option value="10:00AM"></option>
+            <option value="11:00AM"></option>
+            <option value="12:00PM"></option>
+            <option value="13:00PM"></option>
+            <option value="14:00PM"></option>
+            <option value="15:00PM"></option>
+          </datalist>
+          <div class="indicate">§ Please select at least one time slot</div>
+          <span class="alert" id="timeError"></span><br /><br />
+
+          <!-- e) Checkbox -->
+          <label class="title">✏️The Levels of Veganism </label>
+          <br />
+
+          <div>
+            <input type="checkbox" id="vegan" name="vegan" value="Vegan" />
+            <label for="Vegan">Vegan</label>
+          </div>
+          <div>
+            <input type="checkbox" id="lacto" name="vegan" value="Lacto-Vegetarian" />
+            <label for="Lacto-Vegetarian">Lacto-Vegetarian</label>
+          </div>
+          <div>
+            <input type="checkbox" id="ovo" name="vegan" value="Ovo-Vegetarian" />
+            <label for="Ovo-Vegetarian">Ovo-Vegetarian</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="lactoOvo"
+              name="vegan"
+              value="lactoOvo"
+            />
+            <label for="Lacto-Ovo Vegetarian">Lacto-Ovo Vegetarian</label>
+          </div>
+          <div>
+            <input type="checkbox" id="beegan" name="vegan" value="Beegan" />
+            <label for="Beegan">Beegan</label>
+          </div>
+        </div>
+        <br />
+        <!-- f) Radio(at least 3 options) (Required) -->
+
+        <label class="title">✏️Residence </label>
+        <span class="req">*Required</span>
+        <div class="indicate">§ Please select at least one item</div>
+
+
+        <div>
+          <input type="radio" name="residence" id="ottawa" value="Ottawa" />
+          <label for="ottawa">Ottawa</label>
+        </div>
+        <div>
+          <input type="radio" name="residence" id="gatinue" value="Gatineu" />
+          <label for="gatinue">Gatineu</label>
+        </div>
+        <div>
+          <input type="radio" name="residence" id="others" value="Others" />
+          <label for="others">Others</label>
+        </div>
+
+        <span class="alert" id="radioError"></span><br /><br />
+        <input type="submit" value="Submit" class="btn" />
+        <input type="reset" class="btn"/><br /><br />
+      </fieldset>
+      <div class="vaildTrue"></div>
+
+      <!-- h) A read only input to show the total -->
+      <div class="totalBoxTitle">Total Amount</div>
+      <input type="text" id="totalBox" name="totalBox" readonly /><br />
+    </form>
+    <div class="top3"><h3>TOP3 Vegetarian Restaurant in Ottawa</h3></div>
+    <main></main>
+    <section class="container">
+      <article class="firstRow">
+        <div>Image</div>
+        <div>Name</div>
+        <div>Price</div>
+        <div>Category</div>
+        <div>Amount</div>
+        <div>Subtotal</div>
+      </article>
+    </section>
+  </body>
+</html>

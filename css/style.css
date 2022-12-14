@@ -1,0 +1,136 @@
+:root {
+  --title-color: #d167ec56;
+  --font-color: #2b1a71;
+  --btn-bg-color: #b250a7a3;
+  --btn-hover: #b9d47592;
+  --form-border: #691560a3;
+  --indicate-font: rgb(138, 137, 137);
+}
+
+* {
+  font-family: sans-serif;
+}
+body {
+  margin: 20px;
+}
+/* Form */
+form,
+section {
+  font-size: 18px;
+}
+fieldset {
+  border: 3px solid var(--form-border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+legend {
+  font-size: 20px;
+  font-weight: bolder;
+}
+input {
+  border: 2px solid var(--form-border);
+  border-radius: 10px;
+  height: 25px;
+  font-size: 15px;
+}
+img {
+  /* width: 120px;
+  height: 100px; */
+  border-radius: 10px;
+  max-width: 80%;
+  height: 150px;
+}
+div > input,
+label,
+input {
+  line-height: 25px;
+}
+h2,
+h3 {
+  color: var(--font-color);
+  padding: 5px;
+  background-color: var(--title-color);
+}
+.title {
+  color: var(--font-color);
+  font-weight: bold;
+}
+span {
+  font-size: 15px;
+  color: rgb(255, 111, 0);
+}
+.indicate {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--indicate-font);
+}
+/* Button */
+.btn {
+  background-color: var(--btn-bg-color);
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+
+/*Cart */
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, minmax(50px, auto));
+  overflow: auto;
+  border: none;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid var(--form-border);
+  gap: 50px;
+  padding: 10px;
+  border-radius: 10px;
+}
+article img,
+p {
+  width: 20%;
+}
+.firstRow {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid var(--form-border);
+  column-gap: 50px;
+}
+.firstRow div {
+  width: 20%;
+  padding: 10px;
+  color: var(--font-color);
+  font-weight: bold;
+  /* margin-top: 30px; */
+}
+/* Layout */
+div > .top3 {
+  margin: 15px 0;
+}
+
+.top3 > article,
+div {
+  font-size: 18px;
+}
+
+.req {
+  font-size: 12px;
+  color: rgb(211, 32, 116);
+}
+
+.container p,
+.totalBoxTitle {
+  color: #2b1a71;
+}
+
+.container article {
+  text-align: center;
+}
